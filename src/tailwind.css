@@ -2,3 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.nav-hover-item li {
+  @apply hover:bg-lime-300 hover:text-neutral-800 font-bold
+}
+
+
+
+ .mobile-menu-visible {
+transform: translateY(-100%);
+transition: ease-in .5s;
+}
+
+.mobile-menu-hidden {
+transform: translateY(0);
+transition: ease-out .5s;
+} 
