@@ -16,7 +16,7 @@ function handleToggleMobileMenu() {
 
   return (
     <>
-    <header className=" fixed w-full bg-neutral-50 shadow-md ">
+    <header className=" fixed top-0 w-full bg-neutral-50 shadow-md ">
           <div className=" relative flex z-50  bg-neutral-50 justify-between items-center p-3 w-full ">
               <div>
                 <img src="#" alt="" />
@@ -27,7 +27,6 @@ function handleToggleMobileMenu() {
                     {updateMobileMenuIcon}
                   </button>
               </div> 
-             {/* <div className={isMenuToggled} > */}
            <div className={` absolute z-0  w-full bg-neutral-900  p text-neutral-50 ${isMenuToggled ? 'mobile-menu-hidden': 'mobile-menu-visible'  } `} >
                     <nav>
                       <ul className=" nav-hover-item flex flex-col text-center text-lg ">
