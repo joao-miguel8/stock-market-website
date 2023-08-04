@@ -28,11 +28,11 @@ function handleToggleMobileMenu() {
                   </button>
               </div> 
            <div className={` absolute z-0  w-full bg-neutral-900  p text-neutral-50 ${isMenuToggled ? 'mobile-menu-hidden': 'mobile-menu-visible'  } `} >
-                    <nav>
-                      <ul className=" nav-hover-item flex flex-col text-center text-lg ">
+                    <nav className="bg-pink-400" >
+                      <ul className="relative z-40 nav-hover-item flex flex-col text-center text-lg ">
                           <li className=" p-3 " ><a href="#">Explore</a></li>
                           <li className="p-3 border-y-2 border-zinc-700" ><a href="#">News</a></li>
-                          <li className="p-3" ><a href="#">Learn more</a></li>
+                          <li className="p-3 " ><a href="#">Learn more</a></li>
                       </ul>
                     </nav>
                 </div> 

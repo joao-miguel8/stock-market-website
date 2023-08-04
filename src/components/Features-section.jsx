@@ -31,9 +31,9 @@ const [toggleIndex, setToggleIndex] = useState(null)
       <h3 className=" mb-4 font-bold text-neutral-50" >Benefits</h3>
     {benefitsData.map((card, index) => {
       return (
-        <div className=" p-2 border-y border-neutral-700 hover:bg-neutral-800" >
+        <div className=" p-2 border-y border-neutral-700 " >
           <div >
-            <button onClick={() => setToggleIndex(toggleIndex === index ? null : index )}  className=" relative z-10 flex justify-between items-center py-2 w-full text-lime-300" >
+            <button onClick={() => setToggleIndex(toggleIndex === index ? null : index )}  className="  flex justify-between items-center py-2 w-full text-lime-300" >
         <h2 className="text-xs md:text-lg text-left font-bold ">{card.title}</h2>
         <svg className={` w-6   ${toggleIndex === index && "rotate-90 transition ease-in"  }`}  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
